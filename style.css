@@ -1,6 +1,12 @@
 /* intuitivnejší box-sizing */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
 
 /*
 	BARVY
@@ -15,10 +21,136 @@ html { box-sizing: border-box; }
 */
 
 body {
-	margin: 0;
-	padding: 0;
-	background-color: #f5f5f5;
-	font-size: 16px;
-	line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  font-family: "Merriweather", serif;
 }
-
+.pozadi {
+  position: relative;
+  padding: 25px;
+  width: 100%;
+  background-image: url(images/island-hlavicka.jpg);
+  background-size: cover;
+}
+h1,
+h2,
+ul {
+  font-family: "Raleway", sans-serif;
+}
+.pozadi p {
+  font-size: 12px;
+}
+.pozadi::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+h1 {
+  margin: 0;
+  font-size: 40px;
+}
+.bila {
+  position: relative;
+  margin-top: 0;
+  padding-bottom: 15px;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(150, 150, 150, 0.38);
+}
+.jana {
+  position: relative;
+  font-weight: 100;
+  color: silver;
+  font-style: italic;
+}
+.jana::before {
+  content: "";
+  display: block;
+  margin-bottom: 10px;
+  margin: 0 auto;
+  height: 1px;
+  width: 70px;
+  background-color: silver;
+}
+ul {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 50px;
+}
+li {
+  list-style: none;
+}
+li a {
+  display: block;
+  padding: 5px;
+  border-bottom: 0.5px solid silver;
+  font-size: 13px;
+  color: #c0c0c0;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.odsazeni {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
+}
+h2 {
+  text-align: left;
+}
+h2::after {
+  content: "";
+  display: block;
+  margin-left: -20px;
+  margin-top: 15px;
+  width: 75px;
+  height: 3px;
+  background-color: #629fe0;
+}
+img {
+  width: 100%;
+}
+.fotky p,
+.fotky a {
+  margin-top: 0;
+  font-size: 12px;
+  color: grey;
+}
+.galerie p,
+.galerie a {
+  margin-top: 0;
+  color: grey;
+}
+.popisek {
+  font-weight: bold;
+  font-size: 12px;
+}
+.popisek a,
+span {
+  font-size: 10px;
+  font-weight: lighter;
+}
+.foto9 {
+  box-shadow: 0px 4px 30px -1px rgba(0, 0, 0, 0.12);
+}
+.posledni {
+  padding-bottom: 12px;
+}
+footer {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+footer p,
+footer a {
+  text-align: left;
+  font-size: 9px;
+  color: silver;
+}
+/*-----------------KONEC MOBILNÍ VERZE------------------------*/
