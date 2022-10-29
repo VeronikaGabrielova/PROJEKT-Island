@@ -199,3 +199,97 @@ footer a {
   }
 }
 /*--------------------PC Verze--------------*/
+@media screen and (min-width: 960px) {
+  .pozadi {
+    padding: 90px;
+  }
+  h1 {
+    font-size: 90px;
+  }
+  .bila {
+    margin-left: 250px;
+    margin-right: 250px;
+  }
+  .jana {
+    font-style: normal;
+  }
+
+  .stranka {
+    position: relative;
+    top: 60px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: white;
+    margin-top: -130px;
+    max-width: 960px;
+    box-shadow: 0px -2px 5px 0px rgba(0, 0, 0, 0.26);
+  }
+  .flexbox {
+    display: flex;
+    padding-top: 40px;
+    padding-right: 40px;
+  }
+  nav {
+    flex-shrink: 0;
+  }
+  ul {
+    display: block;
+    margin-right: 40px;
+    margin-top: 16px;
+    padding-left: 40px;
+    padding-right: 0;
+    text-align: left;
+    border: 0;
+  }
+  li + li {
+    border: 0;
+  }
+  li a {
+    border-bottom: 0.5px solid silver;
+  }
+  .odsazeni {
+    padding-right: 0;
+  }
+
+  .odsazeni p {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  h2 {
+    padding-left: 40px;
+    font-size: 35px;
+  }
+  h2::after {
+    margin-left: -60px;
+  }
+  .odskok {
+    padding-left: 280px;
+  }
+  .odskok h2::after {
+    margin-left: -30px;
+  }
+  .gridgalerie {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  footer {
+    position: relative;
+    top: 60px;
+    padding-left: 0;
+    padding-top: 30px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    max-width: 960px;
+    background-color: #f5f5f5;
+    box-shadow: none;
+  }
+  footer p,
+  footer a {
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .schovat {
+    display: none;
+  }
+}
