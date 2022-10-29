@@ -73,8 +73,8 @@ h1 {
 .jana::before {
   content: "";
   display: block;
-  margin-bottom: 10px;
   margin: 0 auto;
+  margin-bottom: 20px;
   height: 1px;
   width: 70px;
   background-color: silver;
@@ -136,9 +136,7 @@ span {
   font-size: 10px;
   font-weight: lighter;
 }
-.foto9 {
-  box-shadow: 0px 4px 30px -1px rgba(0, 0, 0, 0.12);
-}
+
 .posledni {
   padding-bottom: 12px;
 }
@@ -146,6 +144,7 @@ footer {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;
+  box-shadow: inset 0px 10px 13px -1px rgb(226, 226, 226);
 }
 footer p,
 footer a {
@@ -154,3 +153,49 @@ footer a {
   color: silver;
 }
 /*-----------------KONEC MOBILNÍ VERZE------------------------*/
+
+@media screen and (min-width: 541px) {
+  ul {
+    display: flex;
+    margin-top: 30px;
+    border-top: 0.5px solid silver;
+    border-bottom: 0.5px solid silver;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  ul li {
+    flex: 0 0 25%;
+  }
+
+  li + li {
+    border-left: 0.5px solid silver;
+  }
+
+  li a {
+    border-bottom: 0;
+  }
+  .fotky {
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .fotky p,
+  .fotky a {
+    color: white;
+  }
+  .vpravo-dole {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }
+
+  .gridgalerie {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .popisek {
+    display: none;
+  }
+}
+/*--------------------PC Verze--------------*/
